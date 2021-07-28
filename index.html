@@ -1,0 +1,192 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      width: auto;
+      height: auto;
+      background-image: url('https://d1i4t8bqe7zgj6.cloudfront.net/10-04-2019/t_b323daf1c78b4ccab3bb496cef0e718b_name_joker_thumb_all_v2.jpg');
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+    }
+    
+    #main {
+      font-family: 'Bangers', cursive;
+      text-align: center;
+      color: white;
+      padding: 1%;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 2%;
+    }
+    
+    #description {
+      font-size: 20px;
+    }
+
+    #survey-form {
+	    text-align: left;
+      font-size: 18px;
+      display: inline-block;
+      background-color: rgb(29,221,51, 0.9);
+      padding: 2%;
+      margin: auto;
+      max-width: auto;
+      border-radius: 5px;
+    }
+    
+    #name {
+      width: 100%;
+      padding: auto;
+      border: 3px solid #8F00FF;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    #email {
+      width: 100%;
+      padding: auto;
+      border: 3px solid #8F00FF;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    #number {
+      width: 100%;
+      padding: auto;
+      border: 3px solid #8F00FF;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    #dropdown {
+      width: 100%;
+      padding: auto;
+      border: 3px solid #8F00FF;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    #textcomments {
+      width: 100%;
+      padding: auto;
+      border: 3px solid #8F00FF;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    
+    #submit {
+	    font-family: 'Bangers', cursive;
+      font-size: 18px;
+      color: purple;
+	    background-color: rgb(255, 255, 255);
+      width: 100%;
+      padding: auto;
+      border: 3px solid #8F00FF;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+      
+  </style>
+  
+<main id="main">
+  <div>
+    <header>
+      <h1 id="title">The Best Joker Survey</h1>
+  
+      <p id="description">Pick the best Joker of all time.</p>
+    </header>
+  
+  <body id="mainbody">
+    <form id="survey-form" action="/action_page.php">  
+      <label id="name-label" >Enter your super hero name</label> <br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+      <br>
+      <br>
+
+      <label id="email-label">Enter an Email</label> <br>
+      <input type="email" id="email" name="email" placeholder="Enter your email"  required/>
+      <br>
+      <br>
+  
+      <label id="number-label">What is your birth year?</label> <br>
+      <input type="number" id="number" name="number" placeholder="Enter your birth year" min="1900" max="2021" required/>
+      <br>
+      <br>
+  
+      <label id="dropdownlist">Who played the best Joker?</label> <br>
+        <select id="dropdown" name="dropdownlist">
+          <option value="JackNicklaus">Jack Nicholson</option>
+          <option value="HeathLedger">Heath Ledger</option>
+          <option value="JaredLeto">Jared Leto</option>
+          <option value="MarkHamill">Mark Hamill</option>
+          <option value="CesarRomero">Cesar Romero</option>
+          <option value="JoaquinPhoenix">Joaquin Phoenix</option>
+        </select>
+      <br>
+      <br>
+  
+      <label>Are you sure?</label> <br>
+        <input type="radio" id="yes" name="areyousure" value="yes" required/>
+        <label for="yes">Yes</label> <br>
+        <input type="radio" id="no" name="areyousure" value="no">
+        <label for="yes">No</label> <br>
+        <input type="radio" id="kinda" name="areyousure" value="kinda">
+        <label for="kinda">Kinda</label> <br>
+        <input type="radio" id="yesdont" name="areyousure" value="yesdont">
+        <label for="yesdont">Yes, don't question my answer.</label> <br>
+      <br>
+      <br>
+    
+    <label>Select other Batman villains you like</label> <br>
+      <input type="checkbox" id="Penguin" name="villains" value="penguin">
+      <label for="penguin">The Penguin</label>
+      <br>
+      <input type="checkbox" id="Mr-Freeze" name="villains" value="mrfreeze">
+      <label for="mrfreeze">Mr. Freeze</label>
+      <br>
+      <input type="checkbox" id="Bane" name="villains" value="bane">
+      <label for="mrfreeze">Bane</label>
+      <br>
+      <input type="checkbox" id="Scarecrow" name="villains" value="scarecrow">
+      <label for="scarecrow">Scarecrow</label>
+      <br>
+      <input type="checkbox" id="Ras-al-Ghul" name="villains" value="rasalghul">
+      <label for="rasalghul">Ra's al Ghul</label>
+      <br>
+      <input type="checkbox" id="Two-Face" name="villains" value="twoface">
+      <label for="twoface">Two-Face</label>
+      <br>
+      <input type="checkbox" id="Catwoman" name="villains" value="catwoman">
+      <label for="catwoman">Catwoman</label>
+      <br>
+      <input type="checkbox" id="Riddler" name="villains" value="riddler">
+      <label for="riddler">Riddler</label>
+      <br>
+      <input type="checkbox" id="Poison-Ivy" name="villains" value="poisonivy">
+      <label for="poisonivy">Poison Ivy</label>
+      <br>
+      <input type="checkbox" id="None" name="villains" value="none">
+      <label for="none">None, I only like heroes</label>
+
+      <br>
+      <br>
+    
+    <label id="textarea">Please enter any comments:</label><br>
+      <textarea id="textcomments" name="finalthoughts" rows="10" cols="50"></textarea>
+    <br>
+    <br>
+    
+    <input id="submit" type="submit" value="Submit" placeholder="Enter your comments here">
+    </form>
+  </body>
+  </div>
+
+    
+</html>
